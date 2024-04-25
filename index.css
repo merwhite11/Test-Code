@@ -1,0 +1,46 @@
+/* .no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+} */
+
+section {
+  height: 150px;
+}
+div {
+  height: 80px;
+}
+.top {
+  background-color: paleturquoise;
+}
+.top > div {
+  border: 1px solid burlywood;
+}
+.bottom {
+  background-color: burlywood;
+}
+
+.bottom > div {
+  border: 1px solid paleturquoise;
+}
+
+.equal-top {
+  background-color: #9BCD9B
+}
+
+.equal-top > div {
+  border: 1px solid #CD5555
+}
+
+.equal-bottom {
+  background-color: #CD5555
+}
+
+.equal-bottom > div {
+  border: 1px solid #9BCD9B
+}

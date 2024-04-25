@@ -1,0 +1,11 @@
+.background {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  /* background-color: hsl(220, 15%, 55%) */
+}
+#canvas {
+  height: 500px;
+  width: 500px;
+  /* background-color: aqua; */
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+     <!--this makes it responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <title>Alignment</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="top row align-items-start">
+        <div class="col">align-items-start</div>
+        <div class="col">align-items-start</div>
+        <div class="col">align-items-start</div>
+      </section>
+      <section class="bottom row align-items-center">
+        <div class="col">align-items-center</div>
+        <div class="col">align-items-center</div>
+        <div class="col">align-items-center</div>
+      </section>
+      <section class="top row align-items-end">
+        <div class="col">align-items-end</div>
+        <div class="col">align-items-end</div>
+        <div class="col">align-items-end</div>
+      </section>
+     <!-- Vertically place cols within row -->
+      <section class="bottom row">
+        <div class="col align-self-start">align-self-start</div>
+        <div class="col align-self-center">align-self-center</div>
+        <div class="col align-self-end">align-self-end</div>
+      </section>
+    <!-- Horizontall place rows within container -->
+      <section class="top row justify-content-start">
+        <div class="col-4">row at start</div>
+        <div class="col-4">row at start</div>
+      </section>
+      <section class="bottom row justify-content-center">
+        <div class="col-4">row at center</div>
+        <div class="col-4">row at center</div>
+      </section>
+      <section class="top row justify-content-end">
+        <div class="col-4">row at end</div>
+        <div class="col-4">row at end</div>
+      </section>
+      <section class="bottom row justify-content-around">
+        <div class="col-4 align-self-center">row at around and col centered</div>
+        <div class="col-4 align-self-center">row at around and col centered</div>
+      </section>
+      <section class="top row justify-content-between">
+        <div class="col-4">row at between</div>
+        <div class="col-4">row at between</div>
+      </section>
+       <!-- Break cols to a new line -- why does this create white space at bottom-->
+       <!-- <section class="top row">
+        <div class="col-6 col-sm-3">xs: 6 // >= sm: 3</div>
+        <div class="col-6 col-sm-3">xs: 6 // >= sm: 3</div>
+        <div class="w-100">COL BREAK</div>
+        <div class="col-6 col-sm-3">xs: 6 // >= sm: 3</div>
+        <div class="col-6 col-sm-3">xs: 6 // >= sm: 3</div>
+       </section> -->
+         <!--Responsive column break -->
+         <section class="bottom row">
+          <div class="col-6 col-sm-3">xs: 6 // >= sm: 3</div>
+          <div class="col-6 col-sm-3">xs: 6 // >= sm: 3</div>
+          <div class="w-100 d-none d-md-block">COL BREAK WHEN >= MD</div>
+          <div class="col-6 col-sm-3">xs: 6 // >= sm: 3</div>
+          <div class="col-6 col-sm-3">xs: 6 // >= sm: 3</div>
+         </section>
+         <!--Offsets -->
+         <section class="top row">
+          <div class="col-md-4">screens >= md takes up 4 cols</div>
+          <div class="col-md-4 offset-md-4">>= md: 4 // >= md: move over 4 cols</div>
+         </section>
+         <section class="bottom row">
+          <div class="col-md-3">screens >= md takes up 3 cols</div>
+          <div class="col-md-4 offset-md-3">>= md: 3 // >= md: move over 3 cols</div>
+         </section>
+         <section class="top row">
+          <div class="col-md-6 offset-md-3">>= md : 6 cols and offset by 3 cols</div>
+         </section>
+          <!--Margins -->
+          <section class="bottom row">
+            <div class="col-md-4">>= md : 4 cols </div>
+            <div class="col-md-4 ml-auto">>= md : 4 cols // auto margin left for all?</div>
+           </section>
+           <section class="top row">
+            <div class="col-md-3 ml-auto"> >= md: 3 cols and ml auto </div>
+            <div class="col-md-3 ml-md-auto">>= md : 3 cols // auto margin left for all?</div>
+           </section>
+           <!--Nesting -->
+           <section class="bottom row">
+            <div class="col-sm-9">Level 1: >= sm : 9 cols
+              <section class="top row">
+                <div class="col-8 col-sm-6">Level 2: xs 8 cols // >= sm 6 cols</div>
+                <div class="col-4 col-sm-6">Level 2: xs 4 cols // >= sm 6 cols</div>
+              </section>
+            </div>
+           </section>
+
+
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
